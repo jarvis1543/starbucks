@@ -1,17 +1,3 @@
-document.querySelector('.search').addEventListener('click', function() {
-  this.classList.add('focused');
-  this.querySelector('input').focus();
-});
-
-document.querySelector('.search input').addEventListener('focus', function() {
-  this.setAttribute('placeholder', '통합검색');
-});
-
-document.querySelector('.search input').addEventListener('blur', function() {
-  document.querySelector('.search').classList.remove('focused');
-  this.removeAttribute('placeholder');
-});
-
 // _.throttle(함수, 시간)
 window.addEventListener('scroll', _.throttle( () => {
   if(window.scrollY > 500){
@@ -121,10 +107,6 @@ new Swiper('.awards .swiper-container', {
     nextEl: '.awards .swiper-next',
   }
 });
-
-document.querySelector('.this-year').textContent = new Date().getFullYear();
-
-console.dir('asdf');
 
 document.querySelector('#to-top').addEventListener('click', () => {
   gsap.to(window, .4, {
