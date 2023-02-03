@@ -124,6 +124,8 @@ new Swiper('.awards .swiper-container', {
 
 document.querySelector('.this-year').textContent = new Date().getFullYear();
 
+console.dir('asdf');
+
 document.querySelector('#to-top').addEventListener('click', () => {
   gsap.to(window, .4, {
     scrollTo: 0
